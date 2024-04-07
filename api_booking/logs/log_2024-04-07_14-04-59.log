@@ -1,0 +1,78 @@
+
+-----
+Test: tests/test_booking.py::Test_new_book::test_create_new_book (call)
+Time: 2024-04-07 14:04:59.494845
+Request method: POST
+Request URL: https://restful-booker.herokuapp.com/auth
+
+Response code: 200
+Response text: {"token":"0b210fd2345b853"}
+Response headers: {'Server': 'Cowboy', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712487899&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=icn9aeIjn0cf0Clye19PJITlkEqocKgRonbC7JopchQ%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712487899&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=icn9aeIjn0cf0Clye19PJITlkEqocKgRonbC7JopchQ%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '27', 'Etag': 'W/"1b-vv1QilcIwCxgA9fXN0OIpJBXWSM"', 'Date': 'Sun, 07 Apr 2024 11:04:59 GMT', 'Via': '1.1 vegur'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_booking.py::Test_new_book::test_create_new_book (call)
+Time: 2024-04-07 14:05:00.095421
+Request method: POST
+Request URL: https://restful-booker.herokuapp.com/booking
+
+Response code: 200
+Response text: {"bookingid":1605,"booking":{"firstname":"James","lastname":"Smith","totalprice":999,"depositpaid":false,"bookingdates":{"checkin":"2023-01-01","checkout":"2024-01-01"},"additionalneeds":"QA"}}
+Response headers: {'Server': 'Cowboy', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712487900&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=TC5olOJ0ideBUe2%2FB9cCOIpKc5DLoqtsDNyf2Q5UNfY%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712487900&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=TC5olOJ0ideBUe2%2FB9cCOIpKc5DLoqtsDNyf2Q5UNfY%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '193', 'Etag': 'W/"c1-bSe8bVc7CbyTq0wfgo21Q942K20"', 'Date': 'Sun, 07 Apr 2024 11:05:00 GMT', 'Via': '1.1 vegur'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_booking.py::Test_new_book::test_create_new_book (call)
+Time: 2024-04-07 14:05:00.630729
+Request method: PUT
+Request URL: https://restful-booker.herokuapp.com/booking/1605
+
+Response code: 200
+Response text: {"firstname":"James","lastname":"Smith","totalprice":599,"depositpaid":true,"bookingdates":{"checkin":"2023-01-01","checkout":"2024-03-24"},"additionalneeds":"QA"}
+Response headers: {'Server': 'Cowboy', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712487900&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=TC5olOJ0ideBUe2%2FB9cCOIpKc5DLoqtsDNyf2Q5UNfY%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712487900&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=TC5olOJ0ideBUe2%2FB9cCOIpKc5DLoqtsDNyf2Q5UNfY%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '163', 'Etag': 'W/"a3-wS3ImbX1IGb8M8WFkUOD+pquUd4"', 'Date': 'Sun, 07 Apr 2024 11:05:00 GMT', 'Via': '1.1 vegur'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_booking.py::Test_new_book::test_create_new_book (call)
+Time: 2024-04-07 14:05:01.160413
+Request method: GET
+Request URL: https://restful-booker.herokuapp.com/booking/1605
+
+Response code: 200
+Response text: {"firstname":"James","lastname":"Smith","totalprice":599,"depositpaid":true,"bookingdates":{"checkin":"2023-01-01","checkout":"2024-03-24"},"additionalneeds":"QA"}
+Response headers: {'Server': 'Cowboy', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712487901&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=WolYLOwTfoRDF%2FyqOQsVQacbZ%2BMpMjIZmZ%2Fqp8b7iEw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712487901&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=WolYLOwTfoRDF%2FyqOQsVQacbZ%2BMpMjIZmZ%2Fqp8b7iEw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '163', 'Etag': 'W/"a3-wS3ImbX1IGb8M8WFkUOD+pquUd4"', 'Date': 'Sun, 07 Apr 2024 11:05:01 GMT', 'Via': '1.1 vegur'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_booking.py::Test_new_book::test_create_new_book (call)
+Time: 2024-04-07 14:05:01.693947
+Request method: PUT
+Request URL: https://restful-booker.herokuapp.com/booking/1605
+
+Response code: 201
+Response text: Created
+Response headers: {'Server': 'Cowboy', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712487901&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=WolYLOwTfoRDF%2FyqOQsVQacbZ%2BMpMjIZmZ%2Fqp8b7iEw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712487901&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=WolYLOwTfoRDF%2FyqOQsVQacbZ%2BMpMjIZmZ%2Fqp8b7iEw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '7', 'Etag': 'W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"', 'Date': 'Sun, 07 Apr 2024 11:05:01 GMT', 'Via': '1.1 vegur'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_booking.py::Test_new_book::test_create_new_book (call)
+Time: 2024-04-07 14:05:02.205707
+Request method: GET
+Request URL: https://restful-booker.herokuapp.com/booking/1605
+
+Response code: 404
+Response text: Not Found
+Response headers: {'Server': 'Cowboy', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712487902&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=nVg48VG7FU0yRUJ4YjXOdcuzlJQZMK9S8ydfFVRo8Ac%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712487902&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=nVg48VG7FU0yRUJ4YjXOdcuzlJQZMK9S8ydfFVRo8Ac%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '9', 'Etag': 'W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"', 'Date': 'Sun, 07 Apr 2024 11:05:02 GMT', 'Via': '1.1 vegur'}
+Response cookies: {}
+
+-----

@@ -1,0 +1,56 @@
+Метод POST. Token creation
+https://restful-booker.herokuapp.com/auth
+{"token":"8899539f0aa953e"}
+Status-code: 200
+TEST PASSED! Status-code: 200
+List of keys in response: ['token']
+TEST PASSED! All required keys are present in the response
+
+Метод POST. Creation of a new book
+https://restful-booker.herokuapp.com/booking
+{"bookingid":3184,"booking":{"firstname":"James","lastname":"Smith","totalprice":999,"depositpaid":false,"bookingdates":{"checkin":"2023-01-01","checkout":"2024-01-01"},"additionalneeds":"QA"}}
+Status-code: 200
+TEST PASSED! Status-code: 200
+List of keys in response: ['bookingid', 'booking']
+TEST PASSED! All required keys are present in the response
+List of keys inside a key 'booking': ['firstname', 'lastname', 'totalprice', 'depositpaid', 'bookingdates', 'additionalneeds']
+TEST PASSED! All fields inside the 'booking' key are present in the response
+ID: 3184
+TEST PASSED! The 'bookingid' field is correctly! Value: 3184 is integer
+TEST PASSED! 'firstname' field is correctly! Value: James
+TEST PASSED! 'lastname' field is correctly! Value: Smith
+TEST PASSED! 'totalprice' field is correctly! Value: 999
+TEST PASSED! 'depositpaid' field is correctly! Value: False
+TEST PASSED! 'additionalneeds' field is correctly! Value: QA
+
+Метод PUT. Update of a new book.
+https://restful-booker.herokuapp.com/booking/3184
+{"firstname":"James","lastname":"Smith","totalprice":599,"depositpaid":true,"bookingdates":{"checkin":"2023-01-01","checkout":"2024-03-24"},"additionalneeds":"QA"}
+Status-code: 200
+TEST PASSED! Status-code: 200
+Список ключей в ответе: ['firstname', 'lastname', 'totalprice', 'depositpaid', 'bookingdates', 'additionalneeds']
+TEST PASSED! All required keys are present in the response
+
+Метод GET. Checking for changes to the data in the book
+https://restful-booker.herokuapp.com/booking/3184
+{"firstname":"James","lastname":"Smith","totalprice":599,"depositpaid":true,"bookingdates":{"checkin":"2023-01-01","checkout":"2024-03-24"},"additionalneeds":"QA"}
+Status-code: 200
+TEST PASSED! Status-code: 200
+List of keys in response: ['firstname', 'lastname', 'totalprice', 'depositpaid', 'bookingdates', 'additionalneeds']
+TEST PASSED! All required keys are present in the response
+TEST PASSED! The 'totalprice' field is correctly! Value: 599
+TEST PASSED! The 'depositpaid' field is correctly! Value: True
+
+Метод DELETE. Deleting a new book
+https://restful-booker.herokuapp.com/booking/3184
+Created
+Status-code: 201
+TEST PASSED! Status-code: 201
+TEST PASSED! Word Created present in the response
+
+Метод GET. Checking deleting a new book
+https://restful-booker.herokuapp.com/booking/3184
+Not Found
+Status-code: 404
+TEST PASSED! Status-code: 404
+

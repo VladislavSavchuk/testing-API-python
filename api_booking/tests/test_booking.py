@@ -3,6 +3,9 @@
 # импортируем json для преобразования ответа
 import json
 
+# импортируем библиотеку allure для генерации отчетов в allure
+import allure
+
 # импортируем класс Booking из файла api.py папки utils
 from utils.api import Booking
 
@@ -15,7 +18,10 @@ from requests import Response
 """Создание, изменение и удаление новой книги"""
 
 
+@allure.epic("Test Creation of new book")
 class Test_new_book:
+
+    @allure.description("Test create, update, delete new book")
     def test_create_new_book(self):
         """Создание токена"""
         print('Метод POST. Token creation')

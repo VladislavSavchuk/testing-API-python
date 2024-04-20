@@ -52,7 +52,7 @@ class Http_methods:
 
     @staticmethod
     def put(url, body, username, password):
-        with allure.step("POST"):
+        with allure.step("PUT"):
             Logger.add_request(url, method="PUT")
             # в переменную result передаем параметры url, body, headers, cookies и auth
             result = requests.put(url, json=body, headers=Http_methods.headers,
@@ -62,8 +62,8 @@ class Http_methods:
 
     @staticmethod
     def delete(url, body, username, password):
-        with allure.step("POST"):
-            Logger.add_request(url, method="PUT")
+        with allure.step("DELETE"):
+            Logger.add_request(url, method="DELETE")
             # в переменную result передаем параметры url, body, headers, cookies и auth
             result = requests.delete(url, json=body, headers=Http_methods.headers,
                                      cookies=Http_methods.cookie, auth=(username, password))

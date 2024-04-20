@@ -167,4 +167,3 @@ class Test_new_book:
         # Проверка статус-кода
         Checking.check_status_code(result_get, 404)
         print()
-
